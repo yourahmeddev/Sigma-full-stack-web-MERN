@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Learn it</title>
+    <style>
+        select {
+            padding: 4px 32px;
+            font-size: 20px;
+            color: blue;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Forms in html</h1>
+    <form action="" method="get">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your First Name">
+        <br>
+        <label for="Enter your Gender">Enter your Gender</label>
+        <br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" name="gender" id="none">
+        <label for="none">None</label>
+        <br>
+        <input type="checkbox" name="agree_terms_to" id="terms-agree">
+        <label for="terms-agree">I agree to terms and condition</label>
+        <br>
+        <br>
+        <br>
+        <label for="about">Tell Us About Yourself</label>
+        <br>
+        <br>
+        <textarea name="about" id="about" cols="50" rows="10">
+            Tell Us about Yourself
+        </textarea>
+        <br>
+        <label for="university">Select Your University</label>
+        <br>
+        <br>
+        <select name="university" id="university">
+            <option value="0">Select Your University</option>
+            <option  value="1">Superior University</option>
+            <option selected value="2">Fast Lahore</option>
+            <option value="3">Comstats</option>
+        </select>
+    </form>
+</body>
+
+</html>
