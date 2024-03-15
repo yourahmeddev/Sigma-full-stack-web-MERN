@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* universal selector in css */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            background-color: blue;
+            color: red;
+        }
+        .red{
+            background-color: red;
+            color: white;
+        }
+        #green{
+            background-color: green;
+            color: white;
+        }
+        div > p{
+            background-color: yellow;
+            color: blue !important;
+        }
+        div p{
+            color: white !important;
+            background-color: red;
+        }
+        h4::before{
+            content:"->";
+        }
+        a:hover{
+            color:red;
+            text-decoration: none;
+        }
+        a:active{
+            color: red;
+        }
+        /* psudo selector  */
+    </style>
+</head>
+<body>
+    <!-- element selector -->
+    <div>
+        This is a box
+        <p>This is a paragraph inside div</p>
+    </div>
+    <div>
+        This is another Box
+    </div>
+    <!-- class selector -->
+    <div class="red">
+        This is red Color
+    </div>
+    <!-- id selector -->
+    <div id="green">
+        This is Green Box
+    </div>
+    <!-- decendent selector in css -->
+    <div>
+        <p>This is a paragraph</p>
+    </div>
+    <h4>This is a First Heading</h4>
+    <a href="#">Visit Us</a>
+</body>
+</html>
